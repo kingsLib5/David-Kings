@@ -24,7 +24,7 @@ const Expertise = () => {
 
   const skills = [
     {
-      category: 'Frontend Architecture',
+      category: 'Frontend Development',
       icon: <FiCode />, 
       technologies: ['React Ecosystem', 'TypeScript', 'Webpack/Vite', 'Micro Frontends'],
       level: 95
@@ -36,13 +36,13 @@ const Expertise = () => {
       level: 90
     },
     {
-      category: 'Backend Systems',
+      category: 'Backend Development',
       icon: <FiServer />, 
       technologies: ['Node.js', 'GraphQL', 'REST APIs', 'WebSockets'],
       level: 92
     },
     {
-      category: 'Data Engineering',
+      category: 'Database Engineering',
       icon: <FiDatabase />, 
       technologies: ['PostgreSQL', 'Redis', 'Elasticsearch', 'BigQuery'],
       level: 88

@@ -1,6 +1,7 @@
 // components/Hero/Hero.jsx
 import { motion } from 'framer-motion';
 import { useThemeStore } from '../Navbar/ThemeStore';
+import codivoraImage from '../../assets/hero.jpeg'; 
 
 const Hero = () => {
   const { theme } = useThemeStore();
@@ -36,7 +37,7 @@ const Hero = () => {
                 }}
                 transition={{
                   delay: 0.2,
-                  duration: 3,
+                  duration: 10,
                   repeat: Infinity,
                   ease: 'easeInOut'
                 }}
@@ -133,20 +134,19 @@ const Hero = () => {
                 theme === 'dark' ? 'bg-blue-800' : 'bg-blue-200'
               } transform rotate-6`}
             />
-
-            <div
-              className={`relative rounded-3xl overflow-hidden ${
-                theme === 'dark' ? 'border-4 border-blue-600' : 'border-4 border-blue-400'
-              }`}
-            >
-              <motion.img
-                src="/src/assets/codivora.jpg"
-                alt="KINGS - Professional Developer"
-                className="w-full h-auto object-cover aspect-square"
-                animate={{ scale: [1, 1.04, 1] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              />
-            </div>
+              {/* image section  */}
+              <div className={`relative rounded-3xl overflow-hidden ${
+                  theme === 'dark' ? 'border-4 border-blue-600' : 'border-4 border-blue-400'
+                }`}
+                >
+                  <motion.img
+                    src={codivoraImage}  // Use the imported image
+                    alt="KINGS - Professional Developer"
+                    className="w-full bg-center bg-cover h-auto object-cover aspect-square"
+                    animate={{ scale: [1, 1.04, 1] }}
+                    transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+                  />
+                </div>
 
             {/* Tech Stack Floating Badges */}
             <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3">

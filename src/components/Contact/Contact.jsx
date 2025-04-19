@@ -7,19 +7,19 @@ import { FiGithub, FiLinkedin, FiMail, FiMessageSquare } from 'react-icons/fi';
 const socialLinks = [
   {
     platform: 'GitHub',
-    url: 'https://github.com/yourusername',
+    url: 'https://github.com/kingsLib5',
     icon: <FiGithub />, 
     hover: 'hover:text-gray-400'
   },
   {
     platform: 'LinkedIn',
-    url: 'https://linkedin.com/in/yourprofile',
+    url: 'https://www.linkedin.com/in/kings-igboanusi-757a66270/',
     icon: <FiLinkedin />, 
     hover: 'hover:text-blue-600'
   },
   {
     platform: 'Email',
-    url: 'mailto:your.email@example.com',
+    url: 'davidkingsig@gmail.com',
     icon: <FiMail />, 
     hover: 'hover:text-red-500'
   }
@@ -118,7 +118,7 @@ const Contact = () => {
               <h3 className={`text-2xl font-bold mb-4 ${theme === 'dark' ? 'text-blue-200' : 'text-blue-800'}`}>Instant Chat</h3>
               <p className={`mb-8 ${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`}>Let's discuss your project right now</p>
               <motion.a
-                href="https://wa.me/yourphonenumber"
+                href="https://wa.me/+2349018115555"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-4 rounded-full text-lg font-medium bg-green-500 hover:bg-green-600 text-white transition-colors"

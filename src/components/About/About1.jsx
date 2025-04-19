@@ -101,7 +101,7 @@ const About1 = () => {
               
               <div className="flex gap-4">
                 <motion.a
-                  href="#projects"
+                  href="https://github.com/kingsLib5?tab=repositories"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className={`px-6 py-2 rounded-full ${
@@ -113,7 +113,7 @@ const About1 = () => {
                   View Projects
                 </motion.a>
                 <motion.a
-                  href="#contact"
+                  href="https://wa.me/+2349018115555"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className={`px-6 py-2 rounded-full border-2 ${
